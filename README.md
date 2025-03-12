@@ -61,22 +61,10 @@
 
 ## Authors
 
-👤**Tina**
-
-- GitHub: [@tinatsina](https://github.com/tinatsina)
-- LinkedIn: [@tinatsina](https://www.linkedin.com/in/tinayetsina/)
-
 👤**Patrick**
 
 - GitHub: [@millinkan](https://github.com/millinkan)
 
-👤**Kannan**
-
-- GitHub: [@KannanSh](https://github.com/EyasuTeshome)
-
-👤**Denis**
-
-- GitHub: [@Y-creation](https://github.com/Y-creation)
 
 ## 🤝 Contributing
 
