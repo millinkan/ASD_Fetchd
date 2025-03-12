@@ -1,0 +1,62 @@
+/* Fullscreen container with a glassmorphic effect */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2a2a72, #009ffd); /* Beautiful gradient */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    color: #fff;
+    overflow: hidden; /* Hide scrolling elements */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Home title styling */
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Description card */
+.home-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3); /* Glassmorphic box shadow */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for elegance */
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5); /* More shadow on hover */
+}
+
+/* Button for cards */
+.card-button {
+    display: inline-block;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient button */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle button shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb); /* Flip gradient */
+    transform: translateY(-3px); /* Move up slightly on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Button pops with more shadow */
+}
