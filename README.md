@@ -30,6 +30,11 @@
 
    - Exchange of contact information after acceptance 
 
+## Development Progress :
+ -  React 18.3.1 does not work with render maps from Leaflet.
+ -  React 19 as at this update is not officially relased so force update to React19 unofficial version resolved "renddering issues."
+ -  Reactdom@19 must also be updated
+
 
 ## Built With
 
