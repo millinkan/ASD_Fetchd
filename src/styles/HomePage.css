@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+
+/* General body and page design */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffbf00, #ffdd55); /* Gradient background */
+    color: #000; /* Black text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+.homepage-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between; /* Spaces out children */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    box-sizing: border-box; /* Consistent sizing */
+}
+
+/* Welcome Section */
+.welcome-section {
+    width: 100%; /* Full width */
+    background: linear-gradient(135deg, #ffbf00, #ffd700); /* Gradient background */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 40px 20px; /* Spacing inside the section */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 8px; /* Slight rounded edges */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem; /* Large bold title */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Uppercase for modernized look */
+}
+
+.welcome-section p {
+    font-size: 1.2rem; /* Slightly larger paragraph text */
+    line-height: 1.6; /* Readable line spacing */
+    margin: 0 auto; /* Center paragraph for smaller screens */
+    max-width: 800px; /* Limit paragraph width */
+}
+
+/* Map Section */
+.map-container {
+    flex: 1 1 50%; /* Take 50% of the width */
+    max-width: 50%; /* Restrict map to 50% of screen */
+    background: rgba(255, 255, 255, 0.8); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Modern shadow */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
+}
+
+.map-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase; /* Make title uppercase */
+    color: #333; /* Slightly darker text for contrast */
+}
+
+#map {
+    width: 100%;
+    height: 400px; /* Fixed map height */
+    border-radius: 12px;
+}
+
+/* Item Details Section */
+.item-details {
+    flex: 1 1 50%; /* Fixed width of 50% of the page */
+    max-width: 50%;
+    background: rgba(255, 255, 255, 0.7); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    padding: 20px;
+    text-align: left;
+    color: #000; /* Black text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-details:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Elevated hover effect */
+}
+
+.item-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.item-label {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.item-label label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item-label img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+}
+
+/* Button styling */
+.fetch-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffd700, #ffc107); /* Gradient button */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 50px; /* "Pill" shape */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fetch-button:hover {
+    background: linear-gradient(90deg, #ffc107, #ffbf00); /* Inverted gradient */
+    transform: translateY(-5px) scale(1.05); /* Elevate and scale */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.fetch-button:active {
+    transform: translateY(2px); /* Pressed effect */
+}
+
+/* Reform Form Container - creating the form view */
+.form-container {
+    flex: 0 0 50%; /* Occupying the center of the screen */
+    max-width: 45%; /* Limit to 50% width */
+    margin: 0% ; /* Center horizontally */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px;
+    color: #000;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select,
+.form-container button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Button inside form */
+.form-container button {
+    background: #ffbf00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-container button:hover {
+    background-color: #ffc107;
+    transform: translateY(-2px);
+}
+
+.form-container button:active {
+    transform: translateY(2px);
+}
+
+/* Utility classes */
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .map-container,
+    .item-details {
+        flex: 1 1 48%; /* Adjust for slightly smaller screens */
+        max-width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map-container,
+    .item-details,
+    .form-container {
+        flex: 1 1 100%; /* Full width in stack layout */
+        max-width: 100%;
+    }
+}

@@ -1,35 +1,22 @@
-/* This is the router file.All files are to be added here */
-
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import PostRequest from './pages/PostRequest';
-import BrowseRequests from './pages/BrowseRequests';
-import RequestDetails from './pages/RequestDetails';
-import MyDeliveries from './pages/MyDeliveries';
-import './styles/global.css';
-import Login from "./pages/Login";
-import Register from "./pages/Registration";
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import RequestsPage from './pages/RequestsPage';
+import ProviderPageView from './components/ProviderPage/ProviderPage';
 
-
-function App() {
+const App = () => {
+  try {
     return (
-        <Router>
-            <Navbar />
-            <div className="app-container">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/post-request" element={<PostRequest />} />
-                    <Route path="/browse-requests" element={<BrowseRequests />} />
-                    <Route path="/request-details/:id" element={<RequestDetails />} />
-                    <Route path="/my-deliveries" element={<MyDeliveries />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                </Routes>
-            </div>
-        </Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/map" element={<RequestsPage />} />
+        <Route path="/provider" element={<ProviderPageView />} />
+      </Routes>
     );
-}
-
+  } catch (error) {
+    console.error("Error in App rendering:", error);
+    return <div>Error Loading App</div>;
+  }
+};
 export default App;

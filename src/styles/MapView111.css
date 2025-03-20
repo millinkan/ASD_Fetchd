@@ -1,0 +1,29 @@
+/* MapView111.css */
+.map-view-container {
+    display: flex; /* Flexbox layout */
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+}
+
+.map {
+    flex: 1; /* Make the map take all available space */
+    height: 100%; /* Full container height */
+}
+
+/* Label styling */
+.map-label {
+    position: absolute; /* Position relative to the container */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Align near the right side */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    color: #333; /* Text color */
+    padding: 10px 15px; /* Add spacing inside */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    text-align: center; /* Center text inside */
+    z-index: 1000; /* Make sure it appears on top of the map */
+}
