@@ -1,72 +1,86 @@
-# Getting Started with Create React App
+# Fetch'd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Welcome to Fetch'd. Your local carrier network for people who want other people to deliver their products. With us,
+> you can quickly hire someone to pickup and drop items at your locations and rate them on their delivery as well.
 
-## Available Scripts
+ **Proof-of-concept :**
+   - Web Application that enables users who own large vehicles to deliver things for other users without a suitable vehicle.
+## Typical User Story :
+   - **User story #1**: **Requester**
+     User 1 - Rachel , likes to buy second-hand furniture on marketplaces like www.ricardo.ch or www.tutti.ch. After buying a chair in Zurich over www.tutti.ch,
+     she opens fetch’d (www.fetchd.ch) and posts the chair’s information **(location, description, picture)** hoping to get it **delivered** by another user.
+     She gets an offer for **100**.- and **accepts** it. When **Alex** delivers the chair later that evening, Rachel is very happy.
 
-In the project directory, you can run:
+   - **User story #2** :**Provider**
+     User 2 - Alex, As a father of three (3), Alex owns a VW Mini Bus - VAN . To earn some additional money in the evenings, he regularly checks fetch’d for
+     new delivery requests around his area. Seeing that **Rachel** is requesting a delivery for a chair from **Zurich** to **Vaduz**, he offers to deliver it for **100**.-.
+     Since **Rachel** **accepts his offer**, he picks up the chair and delivers it to her. When Rachel pays him, he is very happy.
 
-### `npm start`
+ ## Basic Features / Functions :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   - Registration / User Profile : 
+
+   - Posting delivery request with item information (location, description, picture)
+
+   - Map with delivery requests
+
+   - Offering delivery
+
+   - Accepting offer
+
+   - Exchange of contact information after acceptance 
 
 
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Redux
+- Node.js
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone this repository
 
-### `npm run build`
+```bash
+ git clone git@github.com:tinatsina/fetchd_frontend.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ cd hello-react-front-end
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm start
+```
 
-### `npm run eject`
+### Open page in browser
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+ http://localhost:3000/
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👤**Patrick**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- GitHub: [@millinkan](https://github.com/millinkan)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/tinatsina/fetchd_frontend/issues)
 
-### Code Splitting
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- A University of Liechtenstein Winter Semester project for Advanced ISD.
+- Taught by Dr. Giovanni Apruzzese
+- Information Systems course.
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is closed source.
