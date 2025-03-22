@@ -8,6 +8,7 @@
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.3.0",
     "react-scripts": "^3.0.1"
+    "homepage": "https://millinkan.github.io/ASD_fetchd/"
   },
   "scripts": {
     "test": "react-scripts test",
