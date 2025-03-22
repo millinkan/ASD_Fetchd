@@ -35,7 +35,7 @@ const HomePage = () => {
 				<h1>Welcome to Fetch'd!</h1>
 				<p>
 					Effortlessly schedule and track item deliveries with real-time locations. Whether
-					it's picking up from one place or delivering to multiple locations, Fetch Easy
+					it's picking up from one place or delivering to multiple locations, Fetch'd
 					simplifies your logistics.
 				</p>
 			</div>
