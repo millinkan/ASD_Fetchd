@@ -32,7 +32,7 @@ const HomePage = () => {
 		<div>
 			{/* Welcome Section */}
 			<div className="welcome-section">
-				<h1>Welcome to Fetch Easy!</h1>
+				<h1>Welcome to Fetch'd!</h1>
 				<p>
 					Effortlessly schedule and track item deliveries with real-time locations. Whether
 					it's picking up from one place or delivering to multiple locations, Fetch Easy
